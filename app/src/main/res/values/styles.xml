@@ -1,0 +1,31 @@
+<resources>
+    <style name="CalenderViewCustom" parent="Theme.AppCompat">
+        <item name="colorAccent">#7E64FF</item>
+        <item name="colorPrimary">@android:color/darker_gray</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:fontFamily">@font/nunito_bold</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="CalendarWeekDayText">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:fontFamily">@font/nunito_bold</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="CalendarDateText">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:fontFamily">@font/nunito_bold</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="Theme.AppCompat.Dialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowMinWidthMajor">90%</item>
+        <item name="android:windowMinWidthMinor">90%</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+</resources>

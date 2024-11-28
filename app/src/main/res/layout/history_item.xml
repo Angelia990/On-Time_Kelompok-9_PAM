@@ -1,0 +1,172 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingBottom="13dp"
+    android:paddingLeft="40dp">
+
+    <!-- Group container for ImageView and overlaid content -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/imageViewContainer"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/recycler_view_bg"
+        android:backgroundTint="#241641"
+        android:paddingTop="10dp"
+        android:paddingBottom="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <CheckBox
+            android:id="@+id/checkBoxHistory"
+            android:layout_width="25dp"
+            android:layout_height="17dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="10dp"
+            android:text=""
+            app:buttonTint="#C68AFF"
+            android:checked="true"
+            android:clickable="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/historyActivityView"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:fontFamily="@font/nunito_semibold"
+            android:text="TextView"
+            android:textColor="#BDBDBD"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Line separator -->
+        <View
+            android:id="@+id/lineRight"
+            android:layout_width="279dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="7dp"
+            android:background="#C68AFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/historyActivityView" />
+
+        <!-- Additional TextViews -->
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="14dp"
+            android:fontFamily="@font/nunito_bold"
+            android:text="Time"
+            android:textColor="#BDBDBD"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/lineRight" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:fontFamily="@font/nunito_bold"
+            android:text="Place"
+            android:textColor="#BDBDBD"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView10" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:fontFamily="@font/nunito_bold"
+            android:text="Notes"
+            android:textColor="#BDBDBD"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView11" />
+
+        <!-- Additional information TextViews -->
+        <TextView
+            android:id="@+id/historyTimeView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="14dp"
+            android:fontFamily="@font/nunito_regular"
+            android:text="Time"
+            android:textColor="#BDBDBD"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@id/textView10"
+            app:layout_constraintTop_toBottomOf="@id/lineRight" />
+
+        <TextView
+            android:id="@+id/HistoryPlaceView"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="13dp"
+            android:fontFamily="@font/nunito_regular"
+            android:text="Place"
+            android:textColor="#BDBDBD"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@id/textView11"
+            app:layout_constraintTop_toBottomOf="@id/textView10" />
+
+        <ImageView
+            android:id="@+id/histoyImageView"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/add_image"
+            android:layout_marginStart="13dp"
+            android:clickable="true"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toEndOf="@id/textView11"
+            app:layout_constraintTop_toBottomOf="@id/textView12"/>
+
+        <TextView
+            android:id="@+id/historyNotesView"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/nunito_regular"
+            android:text="Notes"
+            android:textColor="#BDBDBD"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@id/textView12"
+            app:layout_constraintTop_toBottomOf="@id/textView11" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewContainer"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/dateview_bg" />
+
+    <TextView
+        android:id="@+id/historyDateView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nunito_bold"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:text="12"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView8"
+        app:layout_constraintEnd_toEndOf="@+id/imageView8"
+        app:layout_constraintStart_toStartOf="@+id/imageView8"
+        app:layout_constraintTop_toTopOf="@+id/imageView8" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,97 @@
+{
+  "project_info": {
+    "project_number": "1072085888957",
+    "project_id": "tugaskelompokpapb",
+    "storage_bucket": "tugaskelompokpapb.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1072085888957:android:78cde2b8a2ff1262836cd4",
+        "android_client_info": {
+          "package_name": "com.example.apiserver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1072085888957-jk3agtd19ddassgcukbonjar54vtjm4n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXTEHtmTmdUXC4E8hi4m8uPjEzvT_zk-c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1072085888957-jk3agtd19ddassgcukbonjar54vtjm4n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1072085888957:android:2dd5b34eca047040836cd4",
+        "android_client_info": {
+          "package_name": "com.example.ontimeapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1072085888957-jk3agtd19ddassgcukbonjar54vtjm4n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXTEHtmTmdUXC4E8hi4m8uPjEzvT_zk-c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1072085888957-jk3agtd19ddassgcukbonjar54vtjm4n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1072085888957:android:04b72d3ed96dfbcd836cd4",
+        "android_client_info": {
+          "package_name": "com.example.tugaskelompok"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1072085888957-jk3agtd19ddassgcukbonjar54vtjm4n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXTEHtmTmdUXC4E8hi4m8uPjEzvT_zk-c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1072085888957-jk3agtd19ddassgcukbonjar54vtjm4n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

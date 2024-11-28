@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddNotes"
+    android:background="@drawable/add_schedule_bg">
+
+    <ImageView
+        android:id="@+id/noteBackImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="61dp"
+        android:clickable="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/arrow_left" />
+
+    <ImageView
+        android:id="@+id/saveNotes"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="26dp"
+        android:clickable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/frame_57" />
+
+    <ImageView
+        android:id="@+id/pinThisNotes"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="16dp"
+        android:clickable="true"
+        app:layout_constraintEnd_toStartOf="@+id/saveNotes"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pinned_img" />
+
+    <EditText
+        android:id="@+id/addNoteTitle"
+        android:layout_width="357dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:background="@android:color/transparent"
+        android:ems="10"
+        android:fontFamily="@font/nunito_bold"
+        android:inputType="text"
+        android:hint="Title"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/noteBackImg" />
+
+    <EditText
+        android:id="@+id/addNoteDesc"
+        android:layout_width="357dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/transparent"
+        android:ems="10"
+        android:fontFamily="@font/nunito_regular"
+        android:inputType="text"
+        android:hint="Your description here"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addNoteTitle" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
